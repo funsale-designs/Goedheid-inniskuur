@@ -6,192 +6,115 @@
   <title>Goedheid inni Skuur</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #456E3E;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
     }
+
     header {
+      background-color: #7c573f;
+      color: white;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #5A8F4F;
+      padding: 2rem;
     }
-    header img {
-      max-width: 250px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+
+    nav {
+      background: #5a3d2b;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
     }
-    header h1 {
-      font-size: 2em;
-      margin-top: 10px;
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
     }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1em;
-    }
-    header p:nth-of-type(2) {
-      font-style: italic;
-      color: #e6f4e8;
-    }
+
     section {
-      padding: 40px 20px;
-      text-align: center;
+      padding: 2rem;
     }
-    .about, .services, .contact, .gallery, .testimonials {
-      background-color: #6FA56A;
-      margin: 20px;
-      border-radius: 12px;
-      padding: 20px;
+
+    h1, h2 {
+      color: #5a3d2b;
     }
-    .package-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+
     .gallery {
-      background-color: #7CB98A;
-    }
-    .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
-    .gallery-grid img {
+
+    .gallery img {
       width: 100%;
       border-radius: 10px;
-      border: 3px solid #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    .testimonial-box {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease forwards;
-      background-color: #5A8F4F;
-      padding: 15px;
-      border-radius: 8px;
-      margin: 15px auto;
-      max-width: 500px;
-    }
-    .testimonial-box:nth-child(1) { animation-delay: 0.2s; }
-    .testimonial-box:nth-child(2) { animation-delay: 0.4s; }
-    .stars {
-      color: gold;
-      font-size: 1.2em;
-      margin-bottom: 8px;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    a.button {
-      display: inline-block;
-      margin: 10px 5px 0;
-      padding: 10px 20px;
-      background: #ffffff;
-      color: #456E3E;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+
     footer {
+      background: #7c573f;
+      color: white;
       text-align: center;
-      padding: 20px;
-      background-color: #35552B;
-      font-size: 0.9em;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contact {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Goedheid inni Skuur Logo" />
     <h1>Goedheid inni Skuur</h1>
-    <p>Waar drome 'n bekostigbare werklikheid word</p>
-    <p style="font-style: italic; font-size: 0.95em;">Where dreams become an affordable reality</p>
+    <p>Waar drome 'n bekostigbare werklikheid word<br>Where dreams become an affordable reality</p>
   </header>
 
-  <section class="about">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section id="about">
     <h2>About Us</h2>
-    <p>Goedheid InniSkuur is a warm, rustic, family-run venue set on the border of the Free State, Gauteng, and Mid Vaal.</p>
-    <p>Surrounded by the beauty of nature, you & your guests can <strong>exhale</strong> any stress and <strong>inhale</strong> the sky above, earth below, and peace within.</p>
-    <p><em>"If you truly love nature you will find beauty everywhere." – Vincent van Gogh</em></p>
-    <p>We host special functions from birthdays, kitchen teas, bachelorettes, baby showers, weddings (elopement, micro & traditional), to family gatherings.</p>
-    <p>We can comfortably accommodate up to 100 guests.</p>
+    <p>Goedheid inni Skuur is a warm, rustic, family-run venue settled on the border of the Free State, Gauteng, and Mid Vaal. Surrounded by the beauty of nature, it's the perfect place for weddings, celebrations, and unforgettable memories.</p>
   </section>
 
-  <section class="services">
-    <h2>What We Offer</h2>
-    <img src="package.jpg" alt="Venue Packages" class="package-img">
-    <ul style="list-style: none; padding: 0; margin-top: 20px;">
-      <li>🌿 DIY option (outside vendors welcome)</li>
-      <li>🎉 Fully inclusive stress-free packages</li>
-      <li>💼 In-house expert vendors</li>
-      <li>💰 Budget friendly options</li>
-    </ul>
-  </section>
-
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <a class="button" href="gallery.html" style="margin-bottom: 20px; display: inline-block;">View Full Gallery</a>
-    <div class="gallery-grid">
-      <img src="image1.jpg" alt="Gallery Image 1">
-      <img src="image2.jpg" alt="Gallery Image 2">
-      <img src="image3.jpg" alt="Gallery Image 3">
-      <img src="image4.jpg" alt="Gallery Image 4">
-      <img src="image5.jpg" alt="Gallery Image 5">
-      <img src="image6.jpg" alt="Gallery Image 6">
-      <img src="image7.jpg" alt="Gallery Image 7">
-      <img src="image8.jpg" alt="Gallery Image 8">
-      <img src="image9.jpg" alt="Gallery Image 9">
-      <img src="image10.jpg" alt="Gallery Image 10">
+  <section>
+    <h2>Gallery Preview</h2>
+    <div class="gallery">
+      <img src="img1.jpg" alt="Venue Image 1">
+      <img src="img2.jpg" alt="Venue Image 2">
+      <img src="img3.jpg" alt="Venue Image 3">
+      <img src="img4.jpg" alt="Venue Image 4">
+      <img src="img5.jpg" alt="Venue Image 5">
+      <img src="img6.jpg" alt="Venue Image 6">
+      <img src="img7.jpg" alt="Venue Image 7">
+      <img src="img8.jpg" alt="Venue Image 8">
+      <img src="img9.jpg" alt="Venue Image 9">
+      <img src="img10.jpg" alt="Venue Image 10">
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>What Our Guests Say</h2>
-    <div class="testimonial-box">
-      <div class="stars">★★★★★</div>
-      <p><em>“This is where your beautiful client feedback will go.”</em></p>
-      <p><strong>– Happy Guest</strong></p>
-    </div>
-    <div class="testimonial-box">
-      <div class="stars">★★★★★</div>
-      <p><em>“You can add more testimonials just like this one.”</em></p>
-      <p><strong>– Satisfied Customer</strong></p>
-    </div>
-    <p>Want to read real reviews?</p>
-    <a class="button" href="https://www.google.com/maps/place/Goedheid+inni+Skuur" target="_blank">View on Google Maps</a>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">View on Facebook</a>
-    <p style="margin-top: 25px;">Were you a guest at Goedheid inni Skuur?</p>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">Leave a Review</a>
-  </section>
-
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>📍 53 Veekraal, Deneysville, South Africa</p>
-    <p>📞 <a href="tel:0832626147" style="color: #fff;">083 262 6147</a></p>
-    <p>📧 <a href="mailto:effortless.memorableevents@gmail.com" style="color: #fff;">effortless.memorableevents@gmail.com</a></p>
-    <a class="button" href="https://wa.me/27832626147" target="_blank">Chat on WhatsApp</a>
-    <div style="margin-top: 20px;">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5713.30822833767!2d28.0890472!3d-26.902862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951eae2d7759d7%3A0xd994ed5f94964ad1!2s53%20Veekraal%20St%2C%20Deneysville%2C%209301!5e0!3m2!1sen!2sza!4v1718700000000!5m2!1sen!2sza"
-        width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+    <p>📞 072 663 4166</p>
+    <p>📧 goedheidinniskuur@gmail.com</p>
+    <p>💬 <a href="https://wa.me/27726634166" target="_blank">WhatsApp Us</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Goedheid inni Skuur. All rights reserved.
+    <p>&copy; 2025 Goedheid inni Skuur. All rights reserved.</p>
   </footer>
 
 </body>
