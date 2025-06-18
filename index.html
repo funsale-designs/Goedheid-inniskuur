@@ -7,8 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#fdfdfd; }
-    header { background:#7c573f; color:#fff; text-align:center; padding:2rem; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+    }
+    header {
+      background: #7c573f;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
     header a.logo-link img {
       width: 150px;
       height: 150px;
@@ -18,65 +28,84 @@
       margin-bottom: 1rem;
     }
     nav {
-      background:#5a3d2b;
-      display:flex;
-      justify-content:center;
-      gap:1rem;
-      padding:1rem;
+      background: #5a3d2b;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
       flex-wrap: wrap;
     }
     nav a {
-      color:white;
-      text-decoration:none;
-      font-weight:600;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
       padding: 0.5rem 1rem;
       border-radius: 5px;
     }
     nav a:hover {
       background-color: #714b34;
     }
-    section { padding:2rem; }
-    h1, h2 { color:#5a3d2b; }
+    section {
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #5a3d2b;
+    }
     .gallery {
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-      gap:1rem;
-      margin-top:1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
     .gallery img {
-      width:100%;
-      border-radius:10px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
     .social-buttons {
-      margin-top:1rem;
-      display:flex;
-      gap:15px;
-      justify-content:center;
+      margin-top: 1rem;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
       flex-wrap: wrap;
     }
     .social-buttons a {
-      text-decoration:none;
-      color:white;
-      padding:10px 16px;
-      border-radius:6px;
-      display:flex;
-      align-items:center;
-      gap:8px;
+      text-decoration: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .facebook { background:#3b5998; }
-    .instagram { background:#e4405f; }
+    .facebook {
+      background: #3b5998;
+    }
+    .instagram {
+      background: #e4405f;
+    }
     .contact {
-      background:#f4f4f4;
-      padding:1rem;
-      border-radius:8px;
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #5a3d2b;
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #ccc;
+    }
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
     }
     footer {
-      background:#7c573f;
-      color:white;
-      text-align:center;
-      padding:1rem;
-      margin-top:2rem;
+      background: #7c573f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -99,7 +128,30 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Goedheid inni Skuur is a warm, rustic, family-run venue settled on the border of the Free State, Gauteng, and Mid Vaal. Surrounded by the beauty of nature, it's the perfect place for weddings, celebrations, and unforgettable memories.</p>
+    <p><strong>Goedheid inni Skuur</strong> is a warm, rustic, family-run venue nestled on the border of the Free State, Gauteng, and Mid Vaal.</p>
+
+    <p>Surrounded by the beauty of nature, you and your guests can <em>exhale</em> stress and <em>inhale</em> the sky above, the earth below, and peace within.</p>
+
+    <blockquote>"If you truly love nature, you will find beauty everywhere." – Vincent van Gogh</blockquote>
+
+    <p>We host all types of special functions, including:</p>
+    <ul>
+      <li>Birthday parties</li>
+      <li>Kitchen teas & Bachelorettes</li>
+      <li>Baby showers</li>
+      <li>Weddings – Elopement, Micro & Traditional</li>
+      <li>Family gatherings</li>
+    </ul>
+
+    <p>We comfortably accommodate up to <strong>100 guests</strong>.</p>
+
+    <h3>We Offer</h3>
+    <ul>
+      <li><strong>DIY option</strong> – Outside vendors are welcome.</li>
+      <li><strong>All-inclusive option</strong> – Our experienced in-house vendors will take care of everything, so you can relax and enjoy your event stress-free.</li>
+    </ul>
+
+    <p>Our in-house team are experts in their field — and to top it off, they're budget-friendly!</p>
 
     <div class="social-buttons">
       <a class="facebook" href="https://www.facebook.com/GoedheidinniSkuur" target="_blank">
