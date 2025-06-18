@@ -15,6 +15,7 @@
       font-family: 'Poppins', sans-serif;
       background-color: #456E3E;
       color: #fff;
+      line-height: 1.6;
     }
     header {
       text-align: center;
@@ -41,12 +42,32 @@
     section {
       padding: 40px 20px;
       text-align: center;
-    }
-    .about, .services, .contact, .gallery, .testimonials {
-      background-color: #6FA56A;
-      margin: 20px;
+      max-width: 900px;
+      margin: 20px auto;
       border-radius: 12px;
-      padding: 20px;
+      background-color: #6FA56A;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      color: #d8e4d2;
+      font-size: 1.1em;
+      max-width: 600px;
+      border-left: 4px solid #e6f4e8;
+      padding-left: 15px;
+    }
+    .services ul {
+      list-style-position: inside;
+      padding-left: 0;
+      margin-top: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .services ul li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
     }
     .package-img {
       max-width: 100%;
@@ -57,17 +78,23 @@
     }
     .gallery {
       background-color: #7CB98A;
+      padding-bottom: 40px;
     }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
       margin-top: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .gallery-grid img {
       width: 100%;
       border-radius: 10px;
       border: 3px solid #fff;
+      object-fit: cover;
+      height: 120px;
     }
     .testimonial-box {
       opacity: 0;
@@ -78,6 +105,7 @@
       border-radius: 8px;
       margin: 15px auto;
       max-width: 500px;
+      text-align: left;
     }
     .testimonial-box:nth-child(1) { animation-delay: 0.2s; }
     .testimonial-box:nth-child(2) { animation-delay: 0.4s; }
@@ -101,6 +129,15 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #35552B;
+      color: #fff;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -113,7 +150,7 @@
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Goedheid inni Skuur Logo" />
+    <img src="logo.jpg" alt="Goedheid inni Skuur logo with rustic leaves design" />
     <h1>Goedheid inni Skuur</h1>
     <p>Waar drome 'n bekostigbare werklikheid word</p>
     <p style="font-style: italic; font-size: 0.95em;">Where dreams become an affordable reality</p>
@@ -121,17 +158,24 @@
 
   <section class="about">
     <h2>About Us</h2>
-    <p>Welcome to Goedheid inni Skuur — a warm and rustic function venue perfect for weddings, birthdays, baby showers, and special gatherings. Nestled in nature with charm and hospitality.</p>
+    <p>Goedheid InniSkuur is a warm, rustic, family-run venue nestled on the border of the Free State, Gauteng, and Mid Vaal.</p>
+    <p>Surrounded by the beauty of nature, you and your guests can <em>exhale</em> any stress and <em>inhale</em> the sky above, the earth below, and the peace within.</p>
+    <blockquote>
+      "If you truly love nature, you will find beauty everywhere." <br />– Vincent van Gogh
+    </blockquote>
+    <p>We host special occasions such as birthday parties, kitchen teas, bachelorette parties, baby showers, weddings (elopement, micro, and traditional), and family gatherings.</p>
+    <p>Our venue comfortably accommodates up to 100 guests.</p>
   </section>
 
   <section class="services">
     <h2>What We Offer</h2>
-    <img src="package.jpg" alt="Venue Packages" class="package-img">
-    <ul style="list-style: none; padding: 0; margin-top: 20px;">
-      <li>🌿 Venue hire with rustic decor</li>
-      <li>🎉 Event setup and coordination</li>
-      <li>🍽 Catering options available</li>
-      <li>📷 Photo-friendly spots and beautiful surroundings</li>
+    <img src="package.jpg" alt="Venue packages and offerings" class="package-img" />
+    <ul>
+      <li>🌿 Venue hire with charming rustic décor</li>
+      <li>🎉 Flexible event options: DIY with outside vendors welcome OR stress-free all-inclusive packages</li>
+      <li>🍽 Catering and décor by experienced in-house vendors</li>
+      <li>💰 Budget-friendly pricing tailored to your needs</li>
+      <li>📷 Beautiful surroundings perfect for photos and memories</li>
     </ul>
   </section>
 
@@ -166,19 +210,19 @@
       <p><strong>– Satisfied Customer</strong></p>
     </div>
     <p>Want to read real reviews?</p>
-    <a class="button" href="https://www.google.com/maps/place/Goedheid+inni+Skuur" target="_blank">View on Google Maps</a>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">View on Facebook</a>
+    <a class="button" href="https://www.google.com/maps/place/Goedheid+inni+Skuur" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank" rel="noopener noreferrer">View on Facebook</a>
 
     <p style="margin-top: 25px;">Were you a guest at Goedheid inni Skuur?</p>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">Leave a Review</a>
+    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank" rel="noopener noreferrer">Leave a Review</a>
   </section>
 
   <section class="contact">
     <h2>Contact Us</h2>
     <p>📍 Deneysville, South Africa</p>
-    <p>📞 <a href="tel:0832626147" style="color: #fff;">083 262 6147</a></p>
-    <p>📧 <a href="mailto:effortless.memorableevents@gmail.com" style="color: #fff;">effortless.memorableevents@gmail.com</a></p>
-    <a class="button" href="https://wa.me/27832626147" target="_blank">Chat on WhatsApp</a>
+    <p>📞 <a href="tel:0832626147">083 262 6147</a></p>
+    <p>📧 <a href="mailto:effortless.memorableevents@gmail.com">effortless.memorableevents@gmail.com</a></p>
+    <a class="button" href="https://wa.me/27832626147" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
   </section>
 
   <footer>
