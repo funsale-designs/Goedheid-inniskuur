@@ -9,31 +9,98 @@
   <style>
     body { font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#fdfdfd; }
     header { background:#7c573f; color:#fff; text-align:center; padding:2rem; }
-    header img { max-width: 200px; margin-bottom: 1rem; }
-    nav { background:#5a3d2b; display:flex; justify-content:center; gap:1rem; padding:1rem; }
-    nav a { color:white; text-decoration:none; font-weight:600; }
+    header a.logo-link img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    nav {
+      background:#5a3d2b;
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      padding:1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #714b34;
+    }
     section { padding:2rem; }
     h1, h2 { color:#5a3d2b; }
-    .gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; margin-top:1rem; }
-    .gallery img { width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
-    .testimonial { background:#fff7f1; border-left:5px solid #c58f6f; padding:1rem; margin-bottom:1rem; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.1); }
-    .social-buttons { margin-top:1rem; display:flex; gap:15px; justify-content:center; }
-    .social-buttons a { text-decoration:none; color:white; padding:10px 16px; border-radius:6px; display:flex; align-items:center; gap:8px; }
+    .gallery {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:1rem;
+      margin-top:1rem;
+    }
+    .gallery img {
+      width:100%;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    }
+    .testimonial {
+      background:#fff7f1;
+      border-left:5px solid #c58f6f;
+      padding:1rem;
+      margin-bottom:1rem;
+      border-radius:6px;
+      box-shadow:0 1px 4px rgba(0,0,0,0.1);
+    }
+    .social-buttons {
+      margin-top:1rem;
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap: wrap;
+    }
+    .social-buttons a {
+      text-decoration:none;
+      color:white;
+      padding:10px 16px;
+      border-radius:6px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
     .facebook { background:#3b5998; }
     .instagram { background:#e4405f; }
     .maps { background:#34a853; }
-    .contact { background:#f4f4f4; padding:1rem; border-radius:8px; }
-    footer { background:#7c573f; color:white; text-align:center; padding:1rem; margin-top:2rem; }
+    .contact {
+      background:#f4f4f4;
+      padding:1rem;
+      border-radius:8px;
+    }
+    footer {
+      background:#7c573f;
+      color:white;
+      text-align:center;
+      padding:1rem;
+      margin-top:2rem;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Goedheid inni Skuur Logo">
+    <!-- Clickable round logo -->
+    <a href="index.html" class="logo-link">
+      <img src="logo.jpg" alt="Goedheid inni Skuur Logo">
+    </a>
     <h1>Goedheid inni Skuur</h1>
     <p>Waar drome 'n bekostigbare werklikheid word<br>Where dreams become an affordable reality</p>
   </header>
 
+  <!-- Navigation (can be reused on all pages) -->
   <nav>
     <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
@@ -44,7 +111,8 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Goedheid inni Skuur is a warm, rustic, family-run venue settled on the border of the Free State, Gauteng, and Mid Vaal...</p>
+    <p>Goedheid inni Skuur is a warm, rustic, family-run venue settled on the border of the Free State, Gauteng, and Mid Vaal. Surrounded by the beauty of nature, it's the perfect place for weddings, celebrations, and unforgettable memories.</p>
+
     <div class="social-buttons">
       <a class="facebook" href="https://www.facebook.com/GoedheidinniSkuur" target="_blank">
         <i class="fab fa-facebook-f"></i> Facebook
