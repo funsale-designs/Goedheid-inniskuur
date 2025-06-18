@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Goedheid inni Skuur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #456E3E;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #fff;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    a.back-button {
+      display: block;
+      margin: 30px auto;
+      width: fit-content;
+      padding: 10px 20px;
+      background: #fff;
+      color: #456E3E;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Venue Gallery</h1>
+
+  <div class="section">
+    <h2>Venu</h2>
+    <div class="gallery-grid">
+      <img src="image1.jpg" alt="Venu 1" />
+      <img src="image2.jpg" alt="Venu 2" />
+      <img src="image3.jpg" alt="Venu 3" />
+      <img src="image4.jpg" alt="Venu 4" />
+      <img src="image5.jpg" alt="Venu 5" />
+      <img src="image6.jpg" alt="Venu 6" />
+      <img src="image7.jpg" alt="Venu 7" />
+      <img src="image8.jpg" alt="Venu 8" />
+      <img src="image9.jpg" alt="Venu 9" />
+      <img src="image10.jpg" alt="Venu 10" />
+      <img src="image11.jpg" alt="Venu 11" />
+      <img src="image12.jpg" alt="Venu 12" />
+      <img src="image13.jpg" alt="Venu 13" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Bridal Room</h2>
+    <div class="gallery-grid">
+      <img src="image14.jpg" alt="Bridal Room 1" />
+      <img src="image15.jpg" alt="Bridal Room 2" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Voël Paradys</h2>
+    <div class="gallery-grid">
+      <img src="image16.jpg" alt="Voël Paradys 1" />
+      <img src="image17.jpg" alt="Voël Paradys 2" />
+      <img src="image18.jpg" alt="Voël Paradys 3" />
+      <img src="image19.jpg" alt="Voël Paradys 4" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Lê Plekkies</h2>
+    <div class="gallery-grid">
+      <img src="image20.jpg" alt="Lê Plekkies 1" />
+      <img src="image21.jpg" alt="Lê Plekkies 2" />
+      <img src="image22.jpg" alt="Lê Plekkies 3" />
+    </div>
+  </div>
+
+  <a class="back-button" href="index.html">← Back to Home</a>
+
+</body>
+</html>
