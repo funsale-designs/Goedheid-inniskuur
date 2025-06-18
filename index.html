@@ -15,7 +15,6 @@
       font-family: 'Poppins', sans-serif;
       background-color: #456E3E;
       color: #fff;
-      line-height: 1.6;
     }
     header {
       text-align: center;
@@ -42,32 +41,12 @@
     section {
       padding: 40px 20px;
       text-align: center;
-      max-width: 900px;
-      margin: 20px auto;
-      border-radius: 12px;
+    }
+    .about, .services, .contact, .gallery, .testimonials {
       background-color: #6FA56A;
-    }
-    blockquote {
-      font-style: italic;
-      margin: 20px auto;
-      color: #d8e4d2;
-      font-size: 1.1em;
-      max-width: 600px;
-      border-left: 4px solid #e6f4e8;
-      padding-left: 15px;
-    }
-    .services ul {
-      list-style-position: inside;
-      padding-left: 0;
-      margin-top: 20px;
-      text-align: left;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .services ul li {
-      margin-bottom: 12px;
-      font-size: 1.1em;
+      margin: 20px;
+      border-radius: 12px;
+      padding: 20px;
     }
     .package-img {
       max-width: 100%;
@@ -78,23 +57,17 @@
     }
     .gallery {
       background-color: #7CB98A;
-      padding-bottom: 40px;
     }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
       margin-top: 20px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
     .gallery-grid img {
       width: 100%;
       border-radius: 10px;
       border: 3px solid #fff;
-      object-fit: cover;
-      height: 120px;
     }
     .testimonial-box {
       opacity: 0;
@@ -105,7 +78,6 @@
       border-radius: 8px;
       margin: 15px auto;
       max-width: 500px;
-      text-align: left;
     }
     .testimonial-box:nth-child(1) { animation-delay: 0.2s; }
     .testimonial-box:nth-child(2) { animation-delay: 0.4s; }
@@ -129,15 +101,6 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #35552B;
-      color: #fff;
-    }
-    .contact a {
-      color: #fff;
-      text-decoration: underline;
     }
     footer {
       text-align: center;
@@ -150,7 +113,7 @@
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Goedheid inni Skuur logo with rustic leaves design" />
+    <img src="logo.jpg" alt="Goedheid inni Skuur Logo" />
     <h1>Goedheid inni Skuur</h1>
     <p>Waar drome 'n bekostigbare werklikheid word</p>
     <p style="font-style: italic; font-size: 0.95em;">Where dreams become an affordable reality</p>
@@ -158,42 +121,59 @@
 
   <section class="about">
     <h2>About Us</h2>
-    <p>Goedheid InniSkuur is a warm, rustic, family-run venue nestled on the border of the Free State, Gauteng, and Mid Vaal.</p>
-    <p>Surrounded by the beauty of nature, you and your guests can <em>exhale</em> any stress and <em>inhale</em> the sky above, the earth below, and the peace within.</p>
-    <blockquote>
-      "If you truly love nature, you will find beauty everywhere." <br />– Vincent van Gogh
-    </blockquote>
-    <p>We host special occasions such as birthday parties, kitchen teas, bachelorette parties, baby showers, weddings (elopement, micro, and traditional), and family gatherings.</p>
-    <p>Our venue comfortably accommodates up to 100 guests.</p>
+    <p>Goedheid InniSkuur is a warm, rustic, family-run venue set on the border of the Free State, Gauteng, and Mid Vaal.</p>
+    <p>Surrounded by the beauty of nature, you & your guests can <strong>exhale</strong> any stress and <strong>inhale</strong> the sky above, earth below, and peace within.</p>
+    <p><em>"If you truly love nature you will find beauty everywhere." – Vincent van Gogh</em></p>
+    <p>We host special functions from birthdays, kitchen teas, bachelorettes, baby showers, weddings (elopement, micro & traditional), to family gatherings.</p>
+    <p>We can comfortably accommodate up to 100 guests.</p>
   </section>
 
   <section class="services">
     <h2>What We Offer</h2>
-    <img src="package.jpg" alt="Venue packages and offerings" class="package-img" />
-    <ul>
-      <li>🌿 Venue hire with charming rustic décor</li>
-      <li>🎉 Flexible event options: DIY with outside vendors welcome OR stress-free all-inclusive packages</li>
-      <li>🍽 Catering and décor by experienced in-house vendors</li>
-      <li>💰 Budget-friendly pricing tailored to your needs</li>
-      <li>📷 Beautiful surroundings perfect for photos and memories</li>
+    <img src="package.jpg" alt="Venue Packages" class="package-img">
+    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+      <li>🌿 DIY option (outside vendors welcome)</li>
+      <li>🎉 Fully inclusive stress-free packages</li>
+      <li>💼 In-house expert vendors</li>
+      <li>💰 Budget friendly options</li>
     </ul>
   </section>
 
   <section class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="decor1.jpg" alt="Decor 1">
-      <img src="decor2.jpg" alt="Decor 2">
-      <img src="decor3.jpg" alt="Decor 3">
-      <img src="decor4.jpg" alt="Decor 4">
-      <img src="decor5.jpg" alt="Decor 5">
-      <img src="decor6.jpg" alt="Decor 6">
-      <img src="decor7.jpg" alt="Decor 7">
-      <img src="venu1.jpg" alt="Venue 1">
-      <img src="venu2.jpg" alt="Venue 2">
-      <img src="landscape1.jpg" alt="Landscape 1">
-      <img src="landscap2.jpg" alt="Landscape 2">
-      <img src="team.jpg" alt="Our Team">
+      <!-- Replace with image1.jpg to image30.jpg -->
+      <!-- You can add/remove more as needed -->
+      <img src="image1.jpg" alt="Gallery Image 1">
+      <img src="image2.jpg" alt="Gallery Image 2">
+      <img src="image3.jpg" alt="Gallery Image 3">
+      <img src="image4.jpg" alt="Gallery Image 4">
+      <img src="image5.jpg" alt="Gallery Image 5">
+      <img src="image6.jpg" alt="Gallery Image 6">
+      <img src="image7.jpg" alt="Gallery Image 7">
+      <img src="image8.jpg" alt="Gallery Image 8">
+      <img src="image9.jpg" alt="Gallery Image 9">
+      <img src="image10.jpg" alt="Gallery Image 10">
+      <img src="image11.jpg" alt="Gallery Image 11">
+      <img src="image12.jpg" alt="Gallery Image 12">
+      <img src="image13.jpg" alt="Gallery Image 13">
+      <img src="image14.jpg" alt="Gallery Image 14">
+      <img src="image15.jpg" alt="Gallery Image 15">
+      <img src="image16.jpg" alt="Gallery Image 16">
+      <img src="image17.jpg" alt="Gallery Image 17">
+      <img src="image18.jpg" alt="Gallery Image 18">
+      <img src="image19.jpg" alt="Gallery Image 19">
+      <img src="image20.jpg" alt="Gallery Image 20">
+      <img src="image21.jpg" alt="Gallery Image 21">
+      <img src="image22.jpg" alt="Gallery Image 22">
+      <img src="image23.jpg" alt="Gallery Image 23">
+      <img src="image24.jpg" alt="Gallery Image 24">
+      <img src="image25.jpg" alt="Gallery Image 25">
+      <img src="image26.jpg" alt="Gallery Image 26">
+      <img src="image27.jpg" alt="Gallery Image 27">
+      <img src="image28.jpg" alt="Gallery Image 28">
+      <img src="image29.jpg" alt="Gallery Image 29">
+      <img src="image30.jpg" alt="Gallery Image 30">
     </div>
   </section>
 
@@ -210,19 +190,25 @@
       <p><strong>– Satisfied Customer</strong></p>
     </div>
     <p>Want to read real reviews?</p>
-    <a class="button" href="https://www.google.com/maps/place/Goedheid+inni+Skuur" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank" rel="noopener noreferrer">View on Facebook</a>
-
+    <a class="button" href="https://www.google.com/maps/place/Goedheid+inni+Skuur" target="_blank">View on Google Maps</a>
+    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">View on Facebook</a>
     <p style="margin-top: 25px;">Were you a guest at Goedheid inni Skuur?</p>
-    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank" rel="noopener noreferrer">Leave a Review</a>
+    <a class="button" href="https://www.facebook.com/share/1EjKvgu2au/" target="_blank">Leave a Review</a>
   </section>
 
   <section class="contact">
     <h2>Contact Us</h2>
     <p>📍 53 Veekraal, Deneysville, South Africa</p>
-    <p>📞 <a href="tel:0832626147">083 262 6147</a></p>
-    <p>📧 <a href="mailto:effortless.memorableevents@gmail.com">effortless.memorableevents@gmail.com</a></p>
-    <a class="button" href="https://wa.me/27832626147" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+    <p>📞 <a href="tel:0832626147" style="color: #fff;">083 262 6147</a></p>
+    <p>📧 <a href="mailto:effortless.memorableevents@gmail.com" style="color: #fff;">effortless.memorableevents@gmail.com</a></p>
+    <a class="button" href="https://wa.me/27832626147" target="_blank">Chat on WhatsApp</a>
+    <div style="margin-top: 20px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5713.30822833767!2d28.0890472!3d-26.902862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951eae2d7759d7%3A0xd994ed5f94964ad1!2s53%20Veekraal%20St%2C%20Deneysville%2C%209301!5e0!3m2!1sen!2sza!4v1718700000000!5m2!1sen!2sza"
+        width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </section>
 
   <footer>
