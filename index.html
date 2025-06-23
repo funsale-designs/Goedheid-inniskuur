@@ -107,6 +107,80 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    /* Slider Styles */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      height: auto;
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #bbb;
+      border-radius: 50%;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .active-dot {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+      .prev, .next {
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .prev, .next {
+        padding: 6px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -126,14 +200,30 @@
     <a href="#about">About</a>
   </nav>
 
+  <!-- Slider Section -->
+  <section>
+    <h2>Slider Preview</h2>
+    <div class="slider">
+      <img class="slides" src="img1.jpg" alt="Slide 1">
+      <img class="slides" src="img2.jpg" alt="Slide 2">
+      <img class="slides" src="img3.jpg" alt="Slide 3">
+
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+    </div>
+  </section>
+
   <section id="about">
     <h2>About Us</h2>
     <p><strong>Goedheid inni Skuur</strong> is a warm, rustic, family-run venue nestled on the border of the Free State, Gauteng, and Mid Vaal.</p>
-
     <p>Surrounded by the beauty of nature, you and your guests can <em>exhale</em> stress and <em>inhale</em> the sky above, the earth below, and peace within.</p>
-
     <blockquote>"If you truly love nature, you will find beauty everywhere." – Vincent van Gogh</blockquote>
-
     <p>We host all types of special functions, including:</p>
     <ul>
       <li>Birthday parties</li>
@@ -142,15 +232,12 @@
       <li>Weddings – Elopement, Micro & Traditional</li>
       <li>Family gatherings</li>
     </ul>
-
     <p>We comfortably accommodate up to <strong>100 guests</strong>.</p>
-
     <h3>We Offer</h3>
     <ul>
       <li><strong>DIY option</strong> – Outside vendors are welcome.</li>
       <li><strong>All-inclusive option</strong> – Our experienced in-house vendors will take care of everything, so you can relax and enjoy your event stress-free.</li>
     </ul>
-
     <p>Our in-house team are experts in their field — and to top it off, they're budget-friendly!</p>
 
     <div class="social-buttons">
@@ -190,6 +277,52 @@
   <footer>
     <p>&copy; 2025 Goedheid inni Skuur. All rights reserved.</p>
   </footer>
+
+  <!-- Slider Script -->
+  <script>
+    let currentSlide = 1;
+    let slideInterval;
+    showSlide(currentSlide);
+
+    function changeSlide(n) {
+      clearInterval(slideInterval);
+      showSlide(currentSlide += n);
+      autoPlay();
+    }
+
+    function setSlide(n) {
+      clearInterval(slideInterval);
+      showSlide(currentSlide = n);
+      autoPlay();
+    }
+
+    function showSlide(n) {
+      const slides = document.getElementsByClassName("slides");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) currentSlide = 1;
+      if (n < 1) currentSlide = slides.length;
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active-dot");
+      }
+
+      slides[currentSlide - 1].style.display = "block";
+      dots[currentSlide - 1].classList.add("active-dot");
+    }
+
+    function autoPlay() {
+      slideInterval = setInterval(() => {
+        changeSlide(1);
+      }, 3000); // every 3 seconds
+    }
+
+    autoPlay();
+  </script>
 
 </body>
 </html>
