@@ -204,9 +204,10 @@
   <section>
     <h2>Slider Preview</h2>
     <div class="slider">
-      <img class="slides" src="img1.jpg" alt="Slide 1">
-      <img class="slides" src="img2.jpg" alt="Slide 2">
-      <img class="slides" src="img3.jpg" alt="Slide 3">
+      <img class="slides" src="img17.jpg" alt="Slide 1">
+      <img class="slides" src="img5.jpg" alt="Slide 2">
+      <img class="slides" src="img7.jpg" alt="Slide 3">
+      <img class="slides" src="img9.jpg" alt="Slide 4">
 
       <button class="prev" onclick="changeSlide(-1)">❮</button>
       <button class="next" onclick="changeSlide(1)">❯</button>
@@ -216,6 +217,7 @@
       <span class="dot" onclick="setSlide(1)"></span>
       <span class="dot" onclick="setSlide(2)"></span>
       <span class="dot" onclick="setSlide(3)"></span>
+      <span class="dot" onclick="setSlide(4)"></span>
     </div>
   </section>
 
@@ -318,7 +320,7 @@
     function autoPlay() {
       slideInterval = setInterval(() => {
         changeSlide(1);
-      }, 3000); // every 3 seconds
+      }, 3000);
     }
 
     autoPlay();
